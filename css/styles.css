@@ -366,7 +366,7 @@ body {
 }
 
 .team-link:hover {
-  background: #31d0aa;
+  background-color: var(--accent-color);
 }
 
 /* ---------- CUSTOMERS ---------------------- */
@@ -401,11 +401,11 @@ body {
 на link - Hover с акцентом на бордер + текст(іконку)  */
 .customers-link {
   display: flex;
-  border: 1px solid #8e8f99;
+  border: 1px solid currentColor;
   border-radius: 4px;
   width: 100%;
   height: 100%;
-  fill: var(--icon-color);
+  /* fill: var(--icon-color); */
   align-items: center;
   justify-content: center;
   color: var(--icon-color);
@@ -413,7 +413,7 @@ body {
 
 .customers-link:hover,
 .customers-link:focus {
-  border-color: var(--accent-color);
+  /*   border-color: var(--accent-color); */
   color: var(--accent-color);
 }
 
@@ -477,7 +477,10 @@ body {
 }
 .cards-link:hover,
 .cards-link:focus {
-  box-shadow: 0px 3px 9px rgb(46 47 66 / 8%);
+  /* box-shadow: 0px 3px 9px rgb(46 47 66 / 8%); */
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .cards .item {
@@ -500,12 +503,14 @@ body {
 
 .cards-link {
   display: block;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
 }
 .cards-text-wrapper {
   padding: 32px 16px;
   /* box-shadow: 0px 1px 6px rgb(46 47 66 / 8%); */
+  border: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .cards-link-text {
   border-left: 1px solid var(--third-color);
